@@ -1,7 +1,5 @@
-(*
-ocamlc -g -c CoqRepr.ml
-ocamlc -o CoqRepr str.cma CoqRepr.cmo
-*)
+(*  ocamlc -g -c CoqRepr.ml
+    ocamlc -o CoqRepr str.cma CoqRepr.cmo *)
 
 let read_whole_file filename =
   let ch = open_in filename in
@@ -87,11 +85,19 @@ let new_name s = let pattern1 = Str.regexp {|[/][^][]*[.]v|} in
       let i = Str.search_backward pattern1 s n in
         "Output/" ^ (String.sub s i ( n - i - 2)) ^ ".csv" ;;
 
-let clean_file s = try let pattern1 = Str.regexp {|[(][*][^][]*\(![(][*]\)[^][]*[*][)]|} in 
-    Str.global_replace pattern1 "" s
+let clean_file3 s = let pattern1 = Str.regexp {|Local Definition|} in 
+    Str.global_replace pattern1 "" s;;
+
+let rec clean_file2 s = try let pattern1 = Str.regexp {|[(][*]|} in 
+    let  pattern2 = Str.regexp {|[*][)]|} in 
+      let i = (Str.search_forward pattern1 s 0) in 
+        let j = (Str.search_forward pattern2 s i)+2 in 
+          clean_file2 ( (String.sub s 0 i) ^ (String.sub s j ( (String.length s) - j )) )
    with Not_found -> s;;
 
-let rec process_file n = function
+let clean_file s = clean_file3 (clean_file2 s);;
+
+let rec process_file = function
     | input_file::other_files -> begin
         print_string(input_file^"\n");
         let theory = clean_file (read_whole_file input_file) in
@@ -101,11 +107,11 @@ let rec process_file n = function
               Printf.fprintf oc "%s\n" "name,proof,address";
               print_list oc l;
               close_out oc;
-              process_file (n+1) other_files
+              process_file other_files
             end
     end
     | _ -> print_string "End\n";;
 
 let files = (dir_contents "/home/josephcmac/HoTT/") in 
     let input_file = List.filter v_ext_file files in
-    process_file 0 input_file
+    process_file input_file

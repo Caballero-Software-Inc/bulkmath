@@ -1,13 +1,1 @@
-[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/josephcmac/Documents/GitHub/bulkmath/CoqGraph/Version1/target/scala-2.13/coqrepr_2.13-1.0.0.jar ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/josephcmac/Documents/GitHub/bulkmath/CoqGraph/Version1/target/scala-2.13/classes/Main$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/josephcmac/Documents/GitHub/bulkmath/CoqGraph/Version1/target/scala-2.13/classes/Main.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main$$typecreator1$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/josephcmac/Documents/GitHub/bulkmath/CoqGraph/Version1/target/scala-2.13/classes/Main$$typecreator1$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main$$typecreator2$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/josephcmac/Documents/GitHub/bulkmath/CoqGraph/Version1/target/scala-2.13/classes/Main$$typecreator2$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main$delayedInit$body.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/josephcmac/Documents/GitHub/bulkmath/CoqGraph/Version1/target/scala-2.13/classes/Main$delayedInit$body.class[0m
-[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
+[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /home/josephcmac/Documents/GitHub/bulkmath/CoqGraph/Version1/target/scala-2.13/coqrepr_2.13-1.0.0.jar[0m
