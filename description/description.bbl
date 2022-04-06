@@ -1,0 +1,224 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{arsiwalla2021pregeometric}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1bda0dd8fc00c0e01fd0d63e63010235}{%
+           family={Arsiwalla},
+           familyi={A\bibinitperiod},
+           given={Xerxes\bibnamedelima D},
+           giveni={X\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=bba33066fedd523975b76543dd51bb5e}{%
+           family={Gorard},
+           familyi={G\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{68a7be7c25d161b8bac783d20a3d91c3}
+      \strng{fullhash}{68a7be7c25d161b8bac783d20a3d91c3}
+      \strng{bibnamehash}{68a7be7c25d161b8bac783d20a3d91c3}
+      \strng{authorbibnamehash}{68a7be7c25d161b8bac783d20a3d91c3}
+      \strng{authornamehash}{68a7be7c25d161b8bac783d20a3d91c3}
+      \strng{authorfullhash}{68a7be7c25d161b8bac783d20a3d91c3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2111.03460}
+      \field{title}{Pregeometric Spaces from Wolfram Model Rewriting Systems as Homotopy Types}
+      \field{year}{2021}
+      \true{nocite}
+    \endentry
+    \entry{harlow2011eternal}{article}{}
+      \name{author}{4}{}{%
+        {{hash=30ea08d8c41b9d4cedb212534a38d0ee}{%
+           family={Harlow},
+           familyi={H\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c4a83a561117ef4c7acb1a0353ee12a5}{%
+           family={Shenker},
+           familyi={S\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e4990c1de0430bbef862867f2a4a3db7}{%
+           family={Stanford},
+           familyi={S\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+        {{hash=57d5460feef651e0511cad25207f396b}{%
+           family={Susskind},
+           familyi={S\bibinitperiod},
+           given={Leonard},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{927813d4388dde29247f92b06c522907}
+      \strng{fullhash}{ba1e1c9cc5c075aae3a5bfeafde25037}
+      \strng{bibnamehash}{927813d4388dde29247f92b06c522907}
+      \strng{authorbibnamehash}{927813d4388dde29247f92b06c522907}
+      \strng{authornamehash}{927813d4388dde29247f92b06c522907}
+      \strng{authorfullhash}{ba1e1c9cc5c075aae3a5bfeafde25037}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1110.0496}
+      \field{title}{Eternal symmetree}
+      \field{year}{2011}
+      \true{nocite}
+    \endentry
+    \entry{kaliszyk2015learning}{article}{}
+      \name{author}{2}{}{%
+        {{hash=10a85b654f1367541fab90b023304aba}{%
+           family={Kaliszyk},
+           familyi={K\bibinitperiod},
+           given={Cezary},
+           giveni={C\bibinitperiod}}}%
+        {{hash=49a65895d90339355469ad0192f7f146}{%
+           family={Urban},
+           familyi={U\bibinitperiod},
+           given={Josef},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{8c7ddc0e381f998959292e787c738bf0}
+      \strng{fullhash}{8c7ddc0e381f998959292e787c738bf0}
+      \strng{bibnamehash}{8c7ddc0e381f998959292e787c738bf0}
+      \strng{authorbibnamehash}{8c7ddc0e381f998959292e787c738bf0}
+      \strng{authornamehash}{8c7ddc0e381f998959292e787c738bf0}
+      \strng{authorfullhash}{8c7ddc0e381f998959292e787c738bf0}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of symbolic computation}
+      \field{title}{Learning-assisted theorem proving with millions of lemmas}
+      \field{volume}{69}
+      \field{year}{2015}
+      \field{pages}{109\bibrangedash 128}
+      \range{pages}{20}
+    \endentry
+    \entry{susskind2012fractal}{article}{}
+      \name{author}{1}{}{%
+        {{hash=57d5460feef651e0511cad25207f396b}{%
+           family={Susskind},
+           familyi={S\bibinitperiod},
+           given={Leonard},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{57d5460feef651e0511cad25207f396b}
+      \strng{fullhash}{57d5460feef651e0511cad25207f396b}
+      \strng{bibnamehash}{57d5460feef651e0511cad25207f396b}
+      \strng{authorbibnamehash}{57d5460feef651e0511cad25207f396b}
+      \strng{authornamehash}{57d5460feef651e0511cad25207f396b}
+      \strng{authorfullhash}{57d5460feef651e0511cad25207f396b}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1203.6440}
+      \field{title}{Fractal-Flows and Time's Arrow}
+      \field{year}{2012}
+      \true{nocite}
+    \endentry
+    \entry{wolfram2020class}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fc7f119c141fbcc7810a4b3a86f599db}{%
+           family={Wolfram},
+           familyi={W\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \strng{fullhash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \strng{bibnamehash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \strng{authorbibnamehash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \strng{authornamehash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \strng{authorfullhash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Complex Systems}
+      \field{number}{2}
+      \field{title}{A Class of Models with the Potential to Represent Fundamental Physics}
+      \field{volume}{29}
+      \field{year}{2020}
+      \true{nocite}
+    \endentry
+    \entry{wolfram2002new}{book}{}
+      \name{author}{1}{}{%
+        {{hash=fc7f119c141fbcc7810a4b3a86f599db}{%
+           family={Wolfram},
+           familyi={W\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wolfram media Champaign}%
+      }
+      \strng{namehash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \strng{fullhash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \strng{bibnamehash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \strng{authorbibnamehash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \strng{authornamehash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \strng{authorfullhash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A New Kind of Science}
+      \field{volume}{5}
+      \field{year}{2002}
+      \true{nocite}
+    \endentry
+    \entry{wolfram2022A}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fc7f119c141fbcc7810a4b3a86f599db}{%
+           family={Wolfram},
+           familyi={W\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \strng{fullhash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \strng{bibnamehash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \strng{authorbibnamehash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \strng{authornamehash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \strng{authorfullhash}{fc7f119c141fbcc7810a4b3a86f599db}
+      \field{extraname}{3}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Stephen Wolfram Writings}
+      \field{title}{The Physicalization of Metamathematics and Its Implications for the Foundations of Mathematics}
+      \field{year}{March 7, 2022}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

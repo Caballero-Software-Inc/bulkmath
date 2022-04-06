@@ -1,0 +1,17 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'description.blg'
+[42] biber:340> INFO - === Sat Mar 26, 2022, 17:02:06
+[50] Biber.pm:415> INFO - Reading 'description.bcf'
+[96] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[105] Biber.pm:4340> INFO - Processing section 0
+[112] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[112] bibtex.pm:1689> INFO - LaTeX decoding ...
+[116] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
+[146] Utils.pm:395> WARN - legacy year field 'March 7, 2022' in entry 'wolfram2022A' is not an integer - this will probably not sort properly.
+[159] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[159] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[159] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[159] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[163] bbl.pm:654> INFO - Writing 'description.bbl' with encoding 'UTF-8'
+[165] bbl.pm:757> INFO - Output to description.bbl
+[165] Biber.pm:128> INFO - WARNINGS: 1

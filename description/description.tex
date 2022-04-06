@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+
+\usepackage{biblatex} %Imports biblatex package
+\addbibresource{bibliography.bib} %Import the bibliography file
+
+% Title Page
+\title{Bulk Metamathematical Limit \\
+\small{Description of the Project}}
+\author{Jos\'e Manuel Rodr\'iguez Caballero}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+	Stephen Wolfram conjectured the existence of an attractor for the evolution of mathematics, which he calls the bulk metamathematical limit. In the same style of his computational equivalence principle, Wolfram conjectured that this attractor should be essentially the same for all branches of mathematics when considered separately. In this data science project, we study the evolution of mathematics according to a dataset (big data) consisting of mathematical proofs written in Isabelle/HOL (Archive of Formal Proofs). We will try to establish to what extent this dataset manifests the statistical properties conjectured by Wolfram.
+\end{abstract}
+
+
+
+\section*{Goals}
+
+The main goal of the current project is to search for statistical evidence for the existence of the attractor that Wolfram calls the bulk metamathematical limit. We hope that this journey will provide insights on the development of a new type of automatic theorem prover based on the statistical properties of the evolution of mathematics, that is, a statistical learning model trained by a large dataset.
+
+
+\section*{Other research}
+
+
+Cezary Kaliszyk and Josef Urban \cite{kaliszyk2015learning} constructed the graph of inference of lemmas in the HOL Light and Flyspeck libraries. They studied the statistical properties of these graphs, e.g., the number of vertices and edges.
+
+
+
+\nocite{*}
+
+\printbibliography
+
+
+\end{document}          
