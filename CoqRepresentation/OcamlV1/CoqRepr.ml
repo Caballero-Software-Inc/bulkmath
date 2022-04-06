@@ -9,7 +9,7 @@ let read_whole_file filename =
 
 let rec read_body1 s l =
   try
-    let pattern1 = Str.regexp {|\(Definition\|Theorem\|Corollary\|Lemma\|Global Instance\)[^][]*\(Defined\|Qed\)|} in
+    let pattern1 = Str.regexp {|\(Theorem\|Corollary\|Lemma\)[^][]*\(Defined\|Qed\)|} in
       let i = Str.search_forward pattern1 s 0 in  
         let pattern2 = Str.regexp {|Defined\|Qed|} in
           let j = Str.search_forward pattern2 s i in 
@@ -24,7 +24,7 @@ let clean_thm3 s = let pattern3 = Str.regexp {|[@][^][]*|} in
 let clean_thm2 s = let pattern2 = Str.regexp {|[ ][^][]*|} in 
 clean_thm3 (Str.replace_first pattern2 "" s);;
 
-let clean_thm s = let pattern1 = Str.regexp {|\(Definition\|Theorem\|Corollary\|Lemma\|Global Instance\)[ ]|} in 
+let clean_thm s = let pattern1 = Str.regexp {|\(Theorem\|Corollary\|Lemma\)[ ]|} in 
   clean_thm2 (Str.replace_first pattern1 "" s);;
 
 let rec clean_proof3 s = let pattern3 = Str.regexp {|[^][]*[.][.]|} in
@@ -85,17 +85,14 @@ let new_name s = let pattern1 = Str.regexp {|[/][^][]*[.]v|} in
       let i = Str.search_backward pattern1 s n in
         "Output/" ^ (String.sub s i ( n - i - 2)) ^ ".csv" ;;
 
-let clean_file3 s = let pattern1 = Str.regexp {|Local Definition|} in 
-    Str.global_replace pattern1 "" s;;
 
-let rec clean_file2 s = try let pattern1 = Str.regexp {|[(][*]|} in 
+let rec clean_file s = try let pattern1 = Str.regexp {|[(][*]|} in 
     let  pattern2 = Str.regexp {|[*][)]|} in 
       let i = (Str.search_forward pattern1 s 0) in 
         let j = (Str.search_forward pattern2 s i)+2 in 
-          clean_file2 ( (String.sub s 0 i) ^ (String.sub s j ( (String.length s) - j )) )
+        clean_file ( (String.sub s 0 i) ^ (String.sub s j ( (String.length s) - j )) )
    with Not_found -> s;;
 
-let clean_file s = clean_file3 (clean_file2 s);;
 
 let rec process_file = function
     | input_file::other_files -> begin

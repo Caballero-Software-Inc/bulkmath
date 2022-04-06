@@ -1,11 +1,10 @@
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.functions.{udf, col, size}
+import org.apache.spark.sql.functions.{udf, col}
 
 import scala.util.matching.Regex
 
 object Main extends App {
-
 
   val conf = new SparkConf()
         .setAppName("CoqGraphApp")
@@ -21,8 +20,6 @@ object Main extends App {
     .csv("/home/josephcmac/Documents/GitHub/bulkmath/Datasets/Dataset1/")
     .na.drop()
 
-
-
   val names = df.select("name")
     .rdd.map(r => r(0).toString).collect().toList
 
@@ -33,12 +30,7 @@ object Main extends App {
   
   val df2 = df.select(col("name"), extractNamesUDF(col("proof")).as("mentions"), col("address"))
 
-  df2.show()
-
-
-  val df3 = df2.where( size(df2("mentions")) > 0 )
-
-  df3.repartition(1).write.option("head", true).parquet("Output")
+  df2.repartition(1).write.parquet("Output")
 
   spark.stop()    
 
